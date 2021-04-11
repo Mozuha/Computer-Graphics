@@ -1,0 +1,7 @@
+*.vcxproj*
+*.sln
+*/.vs/
+*/Debug/
+/Assignment06_2/
+*.pdf
+*.docx
