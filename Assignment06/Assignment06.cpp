@@ -185,8 +185,10 @@ void keyboard(unsigned char key, int x, int y) {
 	if (key == 's' || key == 'S') { glutIdleFunc(NULL); }							// stop morph
 	if (key == 'q' || key == 'Q') exit(0);
 
-	theta[axis] += 2.0;  // change in angle by one keyboard stroke
-	if (theta[axis] > 360.0) theta[axis] -= 360.0;
+	if (key == 'x' || key == 'X' || key == 'y' || key == 'Y' || key == 'z' || key == 'Z') {
+		theta[axis] += 2.0;  // change in angle by one keyboard stroke
+		if (theta[axis] > 360.0) theta[axis] -= 360.0;
+	}
 }
 
 int main(int argc, char** argv) {
